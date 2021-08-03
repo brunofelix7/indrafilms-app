@@ -1,0 +1,36 @@
+.btn-login {
+  border-radius: 5px;
+}
+
+.login-content {
+  width: 100%;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+ion-item {
+  --border-color: var(--ion-color-danger, #ED202C);
+  --background: none;
+}
+
+.item-has-focus{
+  --highlight-background: #e2e2e2;
+}
+
+.login-label {
+  font-size: 14px;
+  color: var(--ion-color-danger);
+}
+
+.bg-image {
+  --background: url('/assets/images/login_bg.png') 0 0/100% 100%;
+  --background-repeat: no-repeat;
+  --background-size: cover;
+}
+
+img {
+  width: 60%;
+  margin: auto;
+  margin-bottom: 50px;
+  display: block;
+}
