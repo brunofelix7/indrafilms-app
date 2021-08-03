@@ -22,6 +22,10 @@ ion-item {
   color: var(--ion-color-danger);
 }
 
+ion-input {
+  color: white;
+}
+
 .bg-image {
   --background: url('/assets/images/login_bg.png') 0 0/100% 100%;
   --background-repeat: no-repeat;
@@ -33,4 +37,12 @@ img {
   margin: auto;
   margin-bottom: 50px;
   display: block;
+}
+
+ion-spinner {
+  width: 100%;
+  margin: auto;
+  margin-top: 10px;
+  display: block;
+  color: white;
 }
