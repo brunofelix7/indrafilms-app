@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ApiService } from './../../services/api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +9,19 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  movies: any[];
 
+  constructor(private service: ApiService, private router: Router) {
+    this.getMovies();
+  }
+
+  getMovies() {
+    this.service.fetchMovies('').subscribe(
+      data => {
+        this.movies = data.results;
+      },
+      error => {
+        console.log(error);
+    });
+  }
 }
