@@ -19,7 +19,7 @@ export class LoginPage implements OnInit {
     private router: Router) { }
 
   ngOnInit() {
-    this.isLoggedIn();
+    //this.isLoggedIn();
   }
 
   login() {

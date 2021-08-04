@@ -15,6 +15,15 @@ export class HomePage {
     this.getMovies();
   }
 
+  showDetails(item: any) {
+    const navigationExtras = {
+      queryParams: {
+        movie: JSON.stringify(item)
+      }
+    };
+    this.router.navigate(['/details'], navigationExtras);
+  }
+
   getMovies() {
     this.service.fetchMovies('').subscribe(
       data => {
